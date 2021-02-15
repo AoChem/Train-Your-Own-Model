@@ -12,7 +12,7 @@ using python.
 ![Techinique applications](PIctures/UsedTechnique.png)
 
 This smart camera system enables end users without coding skills to train their own deep learning model
-for status classification tasks guided by GUI instructions.
+for status classification tasks guided by GUI instructions. A mask-wearing monitor is constructed as a demo here.
 
 ## System overview
 ![System overview](PIctures/HeadPic.png)
@@ -116,4 +116,62 @@ On the side of the raspberry pi, you should
     d. Save and quit.
 
 **You can always find detailed information in official guide [here](https://cloud.google.com/vision/automl/docs/before-you-begin).**
+
+## Train Your Own Model
+- Demo video
+
+![Demo](PIctures/Demo.mp4)
+
+- Detailed instruction
+1. Initialization
+
+Type `python3 TrainYourOwnModel.py` in command line which will prompt the main interface:
+
+![MainGUI](PIctures/MainGUI.png)
+
+2. Initialization
+
+Click on `Initialization` button and input parameters:
+
+![Init](PIctures/Init.png)
+
+3. Picture taking
+
+After initialization, it automatically returns to the main interface. 
+Click on `Take Pictures`, and the camera will start preview and a window will be prompted which guides users to collect data. 
+
+![PictureTaking](PIctures/PictureTaking.png)
+
+4. Data augmentation
+
+Click on `Finish` after collecting work is done and back to main interface. If users need data augmentation, click on `Augment Data`. 
+Choose filters, input number of generated pictures, and choose source and destination, then data augmentation will be automatically conducted. 
+
+![DataAugmentation](PIctures/DataAugmentation.png)
+
+5. Model Training
+
+After the training dataset is prepared, click on `Train Classification Model` to train a model. A window will be popped out for guidance. 
+After training process is done, users will be reminded on screen. A trained model can be found under `models` directory.
+
+![ModelTraining](PIctures/ModelTraining.png)
+
+6. Video Classification
+
+Edit a text file which stores the label information. Click on `Classify Video` to make predictions locally.
+
+![Video Classification](PIctures/VideoClassification.png)
+
+Press `q` to quit classification, and press `t` to enter supplementing mode if an abnormal situation is detected. 
+`Supplement Pictures` and `Train Α New Model` work in the same way as `Take Pictures` and `Train Classification Model` respectively.
+
+![Supplement](PIctures/Supplement.png)
+
+7. Image Classification
+
+If a task is aimed at classifying images, it can be accomplished by clicking on `Image Classification` at the main interface. 
+After naming an excel file which stores the results, choosing the dataset, label file, and model file, 
+image classification module will be automatically implemented and store results locally for following analysis.
+
+![ImageClassification](PIctures/ImageClassification.png)
 
