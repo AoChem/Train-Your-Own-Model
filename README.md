@@ -26,6 +26,7 @@ Several preparations have to be finished before you use this system.
 - Monitor, keyboard(watch out for Swiss German layoout) and mouse(optional)
 
 ### Raspberry Pi setup
+> The OS system should be preinstalled in Raspberry Pi.
 
 After login into the system via:
 
