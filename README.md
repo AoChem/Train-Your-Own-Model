@@ -8,5 +8,5 @@ A smart camera system is designed here which consists of [Raspberry Pi](https://
 in combination with [Google Coral TPU](https://coral.ai/products/accelerator/) with the support of
 [Google Cloud AutoML Vision](https://cloud.google.com/vision/automl/docs/tutorial#tutorial-vision-dataset-python)
 using python.
-![Techinique applications](pictures/UsedTechnique.png)
+![Techinique applications](plctures\UsedTechnique.png)
 
