@@ -9,13 +9,13 @@ A smart camera system is designed here which consists of [Raspberry Pi](https://
 in combination with [Google Coral TPU](https://coral.ai/products/accelerator/) with the support of
 [Google Cloud AutoML Vision](https://cloud.google.com/vision/automl/docs/tutorial#tutorial-vision-dataset-python)
 using python.
-![Techinique applications](PIctures/UsedTechnique.png)
+![Techinique applications](Pictures/UsedTechnique.png)
 
 This smart camera system enables end users without coding skills to train their own deep learning model
 for status classification tasks guided by GUI instructions. A mask-wearing monitor is constructed as a demo here.
 
 ## System overview
-![System overview](PIctures/HeadPic.png)
+![System overview](Pictures/HeadPic.png)
 
 ## Before you start
 Several preparations have to be finished before you use this system.
@@ -122,34 +122,34 @@ On the side of the raspberry pi, you should
 ## Train Your Own Model
 - **Demo video**
 
-![Demo](PIctures/Demo.mp4)
+![Demo](Pictures/Demo.mp4)
 
 - **Stepwise instruction**
 1. Initialization
 
 Type `python3 TrainYourOwnModel.py` in command line which will prompt the main interface:
 
-![MainGUI](PIctures/MainGUI.png)
+![MainGUI](Pictures/MainGUI.png)
 
 2. Initialization
 
 Click on `Initialization` button and input parameters:
 
-![Init](PIctures/Init.png)
+![Init](Pictures/Init.png)
 
 3. Picture taking
 
 After initialization, it automatically returns to the main interface. 
 Click on `Take Pictures`, and the camera will start preview and a window will be prompted which guides users to collect data. 
 
-![PictureTaking](PIctures/PictureTaking.png)
+![PictureTaking](Pictures/PictureTaking.png)
 
 4. Data augmentation
 
 Click on `Finish` after collecting work is done and back to main interface. If users need data augmentation, click on `Augment Data`. 
 Choose filters, input number of generated pictures, and choose source and destination, then data augmentation will be automatically conducted. 
 
-![DataAugmentation](PIctures/DataAugmentation.png)
+![DataAugmentation](Pictures/DataAugmentation.png)
 
 5. Model Training
 
@@ -159,18 +159,18 @@ After training process is done, users will be reminded on screen. A trained mode
 **Important Note**: Currently, the `blob.download_to_file` function does not work well in the main script and I haven't figured this out yet. 
 So, the `.tflite` and `.txt` files should be downloaded mannually on Google Cloud Storage `BUCKET-NAME/model-export/icn/` and transfered to Raspberry Pi./ 
 
-![ModelTraining](PIctures/ModelTraining.png)
+![ModelTraining](Pictures/ModelTraining.png)
 
 6. Video Classification
 
 Edit a text file which stores the label information. Click on `Classify Video` to make predictions locally.
 
-![Video Classification](PIctures/VideoClassification.png)
+![Video Classification](Pictures/VideoClassification.png)
 
 Press `q` to quit classification, and press `t` to enter supplementing mode if an abnormal situation is detected. 
 `Supplement Pictures` and `Train Α New Model` work in the same way as `Take Pictures` and `Train Classification Model` respectively.
 
-![Supplement](PIctures/Supplement.png)
+![Supplement](Pictures/Supplement.png)
 
 7. Image Classification
 
@@ -178,5 +178,5 @@ If a task is aimed at classifying images, it can be accomplished by clicking on 
 After naming an excel file which stores the results, choosing the dataset, label file, and model file, 
 image classification module will be automatically implemented and store results locally for following analysis.
 
-![ImageClassification](PIctures/ImageClassification.png)
+![ImageClassification](Pictures/ImageClassification.png)
 
