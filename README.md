@@ -79,7 +79,8 @@ To check if the WIFI has been connected, in the `~`,
 type in `hostname -I` to see if you get a valid IP.
 
 ### Remote control
-With opening your ssh software and inputting the IP you got, 
+Input `sudo raspi-config` and under `network`, enable `SSH`. 
+With opening your ssh software on your laptop and inputting the IP you got, 
 you can establish a ssh connection.
 
 - SSH connection
