@@ -1,8 +1,13 @@
+# Copyright @Ao Chen
+# Train Your Own Model main script
+
+# GUI packages
 from tkinter import *
 from tkinter import simpledialog
 from tkinter import messagebox
 from tkinter import filedialog
 
+# System pakages
 import os
 import time
 import numpy as np
@@ -10,10 +15,12 @@ import csv
 from picamera import PiCamera
 from time import gmtime, strftime
 
+# Google Cloud Platform packages
 from google.cloud import storage
 from google.cloud import automl
 from google.cloud.storage import Blob
 
+# Media processing packages
 import imutils
 import cv2
 from edgetpu.classification.engine import ClassificationEngine
