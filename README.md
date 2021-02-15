@@ -155,6 +155,9 @@ Choose filters, input number of generated pictures, and choose source and destin
 After the training dataset is prepared, click on `Train Classification Model` to train a model. A window will be popped out for guidance. 
 After training process is done, users will be reminded on screen. A trained model can be found under `models` directory.
 
+**Important Note**: Currently, the `blob.download_to_file` function does not work well in the main script and I haven't figured this out yet. 
+So, the `.tflite` and `.txt` files should be downloaded mannually on Google Cloud Storage `BUCKET-NAME/model-export/icn/` and transfered to Raspberry Pi./ 
+
 ![ModelTraining](PIctures/ModelTraining.png)
 
 6. Video Classification
