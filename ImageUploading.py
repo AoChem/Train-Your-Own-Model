@@ -1,3 +1,4 @@
+# Copyroght @Miha
 # This code is used to loop through each individual image in a given folder,
 # and upload them to gcs one at a time.
 # Also, a new pandas dataframe is created to store the location ,
