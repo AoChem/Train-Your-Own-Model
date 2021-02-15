@@ -1,3 +1,5 @@
+# This script is for compressing images
+
 from PIL import Image
 import PIL
 import os
