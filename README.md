@@ -32,7 +32,7 @@ After login into the system via:
 - username: pi
 - password: rpi4pdz
 
-Type in `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`, type `Enter` and get into the file, inside which you'll have:
+Type in `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf` in command line, type `Enter` and get into the file, inside which you'll have:
 
 ```
 ctrl_interface=/run/wap_supplicant
