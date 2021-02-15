@@ -112,10 +112,10 @@ Once this is completed, you should have the project name, the bucket name and th
 On the side of the raspberry pi, you should
 
 - Edit the `.env` file: 
-    a. Navigate to the program folder and type `ls -all` into the console. There should be a hidden `.env` file. 
-    b. Type nano .env to modify it. 
-    c. Put in the name of the json file and the project name in the respective places. 
-    d. Save and quit.
+    1. Navigate to the program folder and type `ls -all` into the console. There should be a hidden `.env` file. 
+    2. Type nano .env to modify it. 
+    3. Put in the name of the json file and the project name in the respective places. 
+    4. Save and quit.
 
 **You can always find detailed information in official guide [here](https://cloud.google.com/vision/automl/docs/before-you-begin).**
 
