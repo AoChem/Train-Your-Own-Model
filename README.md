@@ -125,32 +125,32 @@ On the side of the raspberry pi, you should
 ![Demo](Pictures/Demo.mp4)
 
 - **Stepwise instruction**
-1. Initialization
+1. Boot up
 
 Type `python3 TrainYourOwnModel.py` in command line which will prompt the main interface:
 
 ![MainGUI](Pictures/MainGUI.png)
-
+---
 2. Initialization
 
 Click on `Initialization` button and input parameters:
 
 ![Init](Pictures/Init.png)
-
+---
 3. Picture taking
 
 After initialization, it automatically returns to the main interface. 
 Click on `Take Pictures`, and the camera will start preview and a window will be prompted which guides users to collect data. 
 
 ![PictureTaking](Pictures/PictureTaking.png)
-
+---
 4. Data augmentation
 
 Click on `Finish` after collecting work is done and back to main interface. If users need data augmentation, click on `Augment Data`. 
 Choose filters, input number of generated pictures, and choose source and destination, then data augmentation will be automatically conducted. 
 
 ![DataAugmentation](Pictures/DataAugmentation.png)
-
+---
 5. Model Training
 
 After the training dataset is prepared, click on `Train Classification Model` to train a model. A window will be popped out for guidance. 
@@ -160,7 +160,7 @@ After training process is done, users will be reminded on screen. A trained mode
 So, the `.tflite` and `.txt` files should be downloaded mannually on Google Cloud Storage `BUCKET-NAME/model-export/icn/` and transfered to Raspberry Pi./ 
 
 ![ModelTraining](Pictures/ModelTraining.png)
-
+---
 6. Video Classification
 
 Edit a text file which stores the label information. Click on `Classify Video` to make predictions locally.
@@ -171,7 +171,7 @@ Press `q` to quit classification, and press `t` to enter supplementing mode if a
 `Supplement Pictures` and `Train Α New Model` work in the same way as `Take Pictures` and `Train Classification Model` respectively.
 
 ![Supplement](Pictures/Supplement.png)
-
+---
 7. Image Classification
 
 If a task is aimed at classifying images, it can be accomplished by clicking on `Image Classification` at the main interface. 
