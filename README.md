@@ -119,11 +119,11 @@ On the side of the raspberry pi, you should
 **You can always find detailed information in official guide [here](https://cloud.google.com/vision/automl/docs/before-you-begin).**
 
 ## Train Your Own Model
-- Demo video
+- **Demo video**
 
 ![Demo](PIctures/Demo.mp4)
 
-- Detailed instruction
+- **Stepwise instruction**
 1. Initialization
 
 Type `python3 TrainYourOwnModel.py` in command line which will prompt the main interface:
