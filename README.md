@@ -117,5 +117,3 @@ On the side of the raspberry pi, you should
 
 **You can always find detailed information in official guide [here](https://cloud.google.com/vision/automl/docs/before-you-begin).**
 
-
-
